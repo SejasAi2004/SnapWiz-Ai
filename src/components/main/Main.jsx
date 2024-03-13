@@ -19,7 +19,7 @@ const Main = () => {
   return (
     <div className="main">
       <div className="nav">
-        <p>SnapWiz</p>
+        <p>SnapWiz<sup> Beta</sup></p>
         <img src={assets.user} alt="" />
       </div>
       <div className="main-container">
@@ -117,8 +117,7 @@ const Main = () => {
           </div>
           <div className="bottom-info">
             <p>
-              SnapWiz may display inaccurate info, including about people, so
-              double-check its responses. Your privacy & SnapWiz AI Apps
+SnapWiz can show wrong data, including people. Verify its answers. Beta supports limited languages.
             </p>
           </div>
         </div>
