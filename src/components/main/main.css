@@ -304,3 +304,9 @@
   border-radius: 40px;
   border: 5px solid #e7f0ff;
 }
+sup {
+  font-size: 11px;
+  margin-top: -40px;
+  color: #b1b1b1;
+  margin-left: 05px;
+}
