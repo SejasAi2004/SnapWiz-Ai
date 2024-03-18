@@ -94,7 +94,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 20px;
-  background-color: #eef6ff;
+  background-color: #4b90ff44;
   padding: 10px 20px;
   border-radius: 50px;
   box-shadow: 0 0 0 30px rgba(255, 255, 255, 0.589);
@@ -267,8 +267,8 @@
 @media (max-width: 1000px) {
   .main-container .greet {
     margin: 50px 0px;
-    font-size: 36px;
-    margin-top: -20px;
+    font-size: 26px;
+    margin-top: 20px;
     color: #9d9d9d;
     background: -webkit-linear-gradient(16deg, #4b90ff, #090909);
     -webkit-background-clip: text;
@@ -284,7 +284,7 @@
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   .main .card {
     height: 200px;
     padding: 15px;
@@ -304,9 +304,34 @@
   border-radius: 40px;
   border: 5px solid #e7f0ff;
 }
+.bottom-info {
+  font-size: 2px;
+}
 sup {
   font-size: 11px;
   margin-top: -40px;
-  color: #b1b1b1;
+  color: #9c9c9c;
   margin-left: 05px;
+}
+hr {
+  height: 2px;
+  color: #ff0000;
+}
+@media (max-width: 390px) {
+  .main .card {
+    display: none;
+  }
+}
+
+@media (max-width: 390px) {
+  .h22 {
+    font-size: 40px;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 1200px) {
+  .h22 {
+    font-size: 50px;
+    margin-top: 20px;
+  }
 }
