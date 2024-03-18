@@ -63,6 +63,7 @@
 .sidebar .bottom {
   display: flex;
   flex-direction: column;
+  text-decoration: none; /* Remove underline */
 }
 .sidebar .bottom-item {
   padding-right: 10px;
@@ -73,4 +74,10 @@
   .sidebar {
     display: none;
   }
+}
+
+.sidebar a {
+  text-decoration: none; /* Remove underline */
+  color: #282828;
+  font-size: 14px;
 }
