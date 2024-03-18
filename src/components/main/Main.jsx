@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { assets } from "../../assets/assets";
 import "./main.css";
 import { Context } from "../../context/Context";
+
 const Main = () => {
   const {
     onSent,
@@ -16,10 +17,19 @@ const Main = () => {
   const handleCardClick = (promptText) => {
     setInput(promptText);
   };
+
+  const handleKeyPress = (e) => {
+    if (e.key === "Enter") {
+      onSent();
+    }
+  };
+
   return (
     <div className="main">
       <div className="nav">
-        <p>SnapWiz<sup> Beta</sup></p>
+        <p>
+          SnapWiz<sup> Beta</sup>
+        </p>
         <img src={assets.user} alt="" />
       </div>
       <div className="main-container">
@@ -91,6 +101,8 @@ const Main = () => {
               ) : (
                 <p id="p1" dangerouslySetInnerHTML={{ __html: resultData }}></p>
               )}
+
+              <div id="google_translate_element"></div>
             </div>
           </div>
         )}
@@ -101,6 +113,7 @@ const Main = () => {
               onChange={(e) => {
                 setInput(e.target.value);
               }}
+              onKeyPress={handleKeyPress} // Added event listener for key press
               value={input}
               type="text"
               placeholder="Enter the Prompt Here"
@@ -117,7 +130,8 @@ const Main = () => {
           </div>
           <div className="bottom-info">
             <p>
-SnapWiz can show wrong data, including people. Verify its answers. Beta supports limited languages.
+              SnapWiz can show wrong data, including people. Verify its answers.
+              Beta supports limited languages.
             </p>
           </div>
         </div>
