@@ -49,6 +49,14 @@ const Sidebar = () => {
           </div>
         ) : null}
       </div>
+      <div className="bottom">
+        <div className="bottom-item recent-entry">
+          <a href="#">
+            <img src={assets.question_icon} alt="" />
+            {extended ? <p>Help</p> : null}
+          </a>
+        </div>
+      </div>
     </div>
   );
 };
