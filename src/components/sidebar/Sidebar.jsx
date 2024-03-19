@@ -51,7 +51,7 @@ const Sidebar = () => {
       </div>
       <div className="bottom">
         <div className="bottom-item recent-entry">
-          <a href="#">
+          <a href="https://sejasai2004.github.io/SnapWizAi-help/#">
             <img src={assets.question_icon} alt="" />
             {extended ? <p>Help</p> : null}
           </a>
