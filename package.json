@@ -1,11 +1,14 @@
 {
   "name": "SnapWiz",
+  "homepage":"http://SnapWiz.chat.io",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "predeploy":"npm run dev",
+    "deploy":"gh-pages -d build -r https://github.com/SejasAi2004/SnapWiz-Ai.git",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
